@@ -1,0 +1,28 @@
+body,
+html {
+    height: 100%;
+}
+
+.parent, .parent1 {
+    background: lightblue;
+    float: left;
+    height: 200px;
+    padding: 10px;
+    width: 50px;
+}
+.parent1 {
+    background-color: yellow;
+}
+
+.child {
+    background: pink;
+    height: 100%; /*inherit from parent=> height 200px */
+    width: 100%; /*inherit from parent=> width 50px */
+}
+
+.viewport-height {
+    background: gray;
+    float: right;
+    height: 100vh; /* Not inherit from parent. Entire screen height exclude padding*/
+    width: 100%; /*inherit from parent=> width 50px */
+}
